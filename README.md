@@ -70,6 +70,9 @@ Fig 2. illustration of system connection layouts a) connection of SD card module
 - Both sensors agreed on temperature trends; RH values varied.
 - SHTC3 showed consistently higher RH than SCD-40.
 
+![AGABAA](https://github.com/user-attachments/assets/ccba80ec-4eb2-4318-8f39-200fd7701df1)
+
+Fig 3. Results measured and logged over three days
 ---
 
 ## 4. Conclusion
