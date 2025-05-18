@@ -73,6 +73,7 @@ Fig 2. illustration of system connection layouts a) connection of SD card module
 ![AGABAA](https://github.com/user-attachments/assets/ccba80ec-4eb2-4318-8f39-200fd7701df1)
 
 Fig 3. Results measured and logged over three days
+
 ---
 
 ## 4. Conclusion
@@ -83,11 +84,10 @@ The project validates the use of affordable, open-source hardware for reliable e
 
 ## 5. References
 
-1. Chan et al. (2021) - Low-cost sensors in geography  
-2. Horsburgh et al. (2019) - Managing data from open systems  
-3. Kumar et al. (2015) - Air pollution monitoring  
-4. Mahan & Yeater (2008) - Agricultural IR thermometers  
-5. Thompson (2016) - Crowd-sourced air quality
+1. Chan, K., Schillereff, D. N., Baas, A. C., Chadwick, M. A., Main, B., Mulligan, M., O’Shea, F. T., Pearce, R., Smith, T. E., & Van Soesbergen, A. (2021). Low-cost electronic sensors for environmental research: Pitfalls and opportunities. Progress in Physical Geography: Earth and Environment, 45(3), 305-338.
+2. Horsburgh, J. S., Caraballo, J., Ramírez, M., Aufdenkampe, A. K., Arscott, D. B., & Damiano, S. G. (2019). Low-cost, open-source, and low-power: But what to do with the data? frontiers in Earth Science, 7, 67.
+3. Kumar, P., Morawska, L., Martani, C., Biskos, G., Neophytou, M., Di Sabatino, S., Bell, M., Norford, L., & Britter, R. (2015). The rise of low-cost sensing for managing air pollution in cities. Environment international, 75, 199-205. 
+
 
 ---
 
