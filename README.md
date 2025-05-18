@@ -53,6 +53,12 @@ The Arduino was programmed using Arduino IDE to log measurements every 10 second
 
 The system continuously logs T, RH, and CO₂ indoors using connected sensors and Arduino.
 
+![image](https://github.com/user-attachments/assets/e0f1f834-6a34-4a42-9150-55a551d3d491)
+Fig 1. System components; 1) power into the board through the USB cable, 2) SHTC3 sensor, 3) Arduino UNO, 4) jump wires, 5) SCD-40, 6) microSD card, and 7) microSD card breakout module.
+
+![image](https://github.com/user-attachments/assets/7be6bab0-f67e-475b-bb66-318a08fec83a)
+Fig 2. illustration of system connection layouts a) connection of SD card module and other sensors to the Arduino UNO board, b) card layout of connections
+
 ---
 
 ## 3. Results
