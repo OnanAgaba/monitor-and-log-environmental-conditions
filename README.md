@@ -1,70 +1,83 @@
+# Monitor and Log Environmental Conditions Using Low-Cost Open-Source Hardware
 
-🛰️ Monitor and Log Environmental Conditions using Low-Cost Open-Source Hardware
-===============================================================================
+**Authors**: Onan Agaba\*, Elad Levintal, Devi Sarai Orozco Fuentes, and Thuc Thi Nguyen  
+**Affiliations**:  
+1. French Associates Institute for Agriculture and Biotechnology of Drylands  
+2. Zuckerberg Institute for Water Research, Ben-Gurion University of the Negev, Israel  
+🔗 [GitHub Repository](https://github.com/OnanAgaba/monitor-and-log-environmental-conditions)
 
-Onan Agaba¹*, Elad Levintal², Devi Sarai Orozco Fuentes², Thuc Thi Nguyen²  
-¹ French Associates Institute for Agriculture and Biotechnology of Drylands  
-² Zuckerberg Institute for Water Research, Ben-Gurion University of the Negev, Israel  
-🔗 Project Repository: https://github.com/OnanAgaba/monitor-and-log-environmental-conditions
+---
 
-📑 Table of Contents
---------------------
-1. Overview  
-2. System Components  
-3. Wiring & Assembly  
-4. Programming & Data Logging  
-5. Bill of Materials  
-6. Results  
-7. Conclusion  
-8. References
+## Table of Contents
 
-1. Overview
------------
-This project demonstrates how to monitor indoor environmental conditions—temperature (T), relative humidity (RH), and carbon dioxide (CO₂)—using low-cost open-source hardware over a 3-day period.
+- [1. Introduction](#1-introduction)
+- [2. Experimental Design](#2-experimental-design)
+  - [2.1 Wiring and Assembly](#21-wiring-and-assembly)
+  - [2.2 Programming and Logging](#22-programming-and-logging)
+  - [2.3 Bill of Materials](#23-bill-of-materials)
+  - [2.4 System Overview](#24-system-overview)
+- [3. Results](#3-results)
+- [4. Conclusion](#4-conclusion)
+- [5. References](#5-references)
 
-2. System Components
----------------------
-- Microcontroller: Arduino UNO  
-- Sensors: SHTC3 (T/RH), SCD-40 (CO₂/T/RH)  
-- Storage: microSD card via breakout module
+---
 
-3. Wiring & Assembly
----------------------
-Sensors and storage were wired to the Arduino via jumper wires and a STEMMA QT cable. Powered via USB, the setup logged real-time sensor data.
+## 1. Introduction
 
-4. Programming & Data Logging
-------------------------------
-Using Arduino IDE v2.3.4, the code (C++) logged sensor values every 10 seconds using `millis()` for timestamps. Data was saved to a microSD card for offline analysis.
+Environmental monitoring is critical for assessing hydrological, meteorological, and ecological trends. This project presents a low-cost system using open-source hardware to monitor temperature, relative humidity (RH), and carbon dioxide (CO₂) over three days in a caravan.
 
-5. Bill of Materials
----------------------
-| Component       | Description           | Cost    |
-|----------------|-----------------------|---------|
-| Arduino UNO     | Microcontroller       | $12.90  |
-| SHTC3 Sensor    | T/RH Sensor (I2C)     | $6.95   |
-| SCD-40 Sensor   | CO₂/T/RH Sensor (I2C) | $44.95  |
-| microSD Module  | SD card interface     | $5.95   |
-| SD Card         | SanDisk Ultra HC1     | $15.00  |
-| Cables          | Jumper wires & USB    | $6.98   |
+---
 
-6. Results
-----------
-Measurements began on May 14, 2025 at 22:00, and ran for three days.  
-- CO₂ levels spiked during occupancy  
-- T readings were consistent across sensors  
-- RH values varied: SHTC3 reported higher values than SCD-40
+## 2. Experimental Design
 
-7. Conclusion
---------------
-This setup shows that affordable, scalable, open-source tools can effectively support indoor environmental monitoring. Future improvements could include:
-- Real-Time Clock (RTC)
-- Wireless data transfer
-- Sensor calibration
+### 2.1 Wiring and Assembly
 
-8. References
---------------
-1. Chan et al. (2021). Progress in Physical Geography, 45(3).  
-2. Horsburgh et al. (2019). Frontiers in Earth Science, 7.  
-3. Kumar et al. (2015). Environment International, 75.  
-4. Mahan & Yeater (2008). Computers and Electronics in Agriculture, 64(2).  
-5. Thompson (2016). Trends in Environmental Analytical Chemistry, 11.
+Components include an Arduino UNO, SHTC3 sensor (for T/RH), SCD-40 sensor (for CO₂/T/RH), and microSD storage. Sensors and storage were connected via jumper wires and STEMMA QT cables.
+
+### 2.2 Programming and Logging
+
+The Arduino was programmed using Arduino IDE to log measurements every 10 seconds. Data was timestamped and saved to a microSD card.
+
+### 2.3 Bill of Materials
+
+| Component          | Description                                | Cost   |
+|-------------------|--------------------------------------------|--------|
+| Arduino UNO        | Microcontroller                            | $12.90 |
+| MicroSD Module     | SD card interface                          | $5.95  |
+| SD Card            | Data storage                               | $15.00 |
+| SHTC3 Sensor       | Temp and RH sensor                         | $6.95  |
+| SCD-40 Sensor      | CO₂, Temp, RH sensor                       | $44.95 |
+| Cables             | USB and jumper wires                       | $6.98  |
+
+### 2.4 System Overview
+
+The system continuously logs T, RH, and CO₂ indoors using connected sensors and Arduino.
+
+---
+
+## 3. Results
+
+- Logging began on May 14, 2025.
+- CO₂ levels increased during periods of occupancy.
+- Both sensors agreed on temperature trends; RH values varied.
+- SHTC3 showed consistently higher RH than SCD-40.
+
+---
+
+## 4. Conclusion
+
+The project validates the use of affordable, open-source hardware for reliable environmental monitoring. Future versions may include real-time clocks and wireless transmission.
+
+---
+
+## 5. References
+
+1. Chan et al. (2021) - Low-cost sensors in geography  
+2. Horsburgh et al. (2019) - Managing data from open systems  
+3. Kumar et al. (2015) - Air pollution monitoring  
+4. Mahan & Yeater (2008) - Agricultural IR thermometers  
+5. Thompson (2016) - Crowd-sourced air quality
+
+---
+
+*For questions, contact: [Onan Agaba](mailto:onan.agaba@example.com)*
