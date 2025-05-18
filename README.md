@@ -91,4 +91,4 @@ The project validates the use of affordable, open-source hardware for reliable e
 
 ---
 
-*For questions, contact: [Onan Agaba](mailto:onan.agaba@example.com)*
+*For questions, contact: [Onan Agaba](mailto:onanagaba@gmail.com)*
